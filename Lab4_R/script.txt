@@ -1,0 +1,5 @@
+usedcars <- read.csv ("usedcars.csv", stringsAsFactors=F)
+pdf ("example.pdf")
+attach (usedcars)
+plot (price ~ mileage)
+graphics.off ()
